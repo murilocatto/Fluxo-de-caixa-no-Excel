@@ -1,44 +1,44 @@
-# Projeto: Sistema de Fluxo de Caixa e Análise de Viabilidade (VPL/Payback)
+# Projeto: Sistema Integrado de Fluxo de Caixa e Análise de Viabilidade
 
 ## 📌 Sobre o Projeto
-Este projeto consiste no desenvolvimento de uma ferramenta de análise financeira voltada para a avaliação de projetos de investimento. O objetivo principal é transformar dados brutos de receitas e despesas em indicadores de decisão, permitindo identificar se um investimento é lucrativo e em quanto tempo o capital retornará.
+Este projeto apresenta uma solução completa para a gestão financeira, unindo o **controle operacional de caixa** com a **análise estratégica de viabilidade**. O sistema foi desenvolvido para permitir que o usuário não apenas registre as movimentações diárias (Entradas e Saídas), mas também utilize esses dados para calcular se um projeto ou investimento é financeiramente sustentável a longo prazo.
 
-## 🚀 Funcionalidades Principais
-* **Estruturação de Fluxo de Caixa:** Organização cronológica de Entradas (Receitas) e Saídas (Custos, Despesas, Impostos).
-* **Cálculo de Indicadores de Viabilidade:**
-    * **VPL (Valor Presente Líquido):** Cálculo da riqueza gerada pelo projeto a valor presente.
-    * **Payback Simples e Descontado:** Determinação do tempo de recuperação do investimento.
-* **Modelagem de Amortização:** Integração com sistemas **SAC** e **Price** para previsão de parcelas de financiamento.
+## 🚀 Módulos do Sistema
 
-## 📊 Fundamentação Matemática
-Para garantir a precisão dos resultados, o projeto utiliza as seguintes lógicas financeiras:
+### 1. Gestão de Fluxo de Caixa (Operacional)
+Focado no controle de liquidez e saúde financeira imediata:
+* **Lançamentos Cronológicos:** Registro de receitas, custos e despesas com identificação de categorias.
+* **Cálculo de Saldo Operacional:** Lógica automatizada para atualização de saldo acumulado.
+* **Projeção de Caixa:** Ferramenta para antecipar períodos de déficit ou superávit com base em lançamentos futuros.
 
-### 1. Valor Presente Líquido (VPL)
-O VPL traz todos os valores futuros para o valor de hoje, descontando a taxa de juros (TMA). 
-**Fórmula:**
-`VPL = [Somatório de (FCt / (1 + i)^t)] - Investimento Inicial`
+### 2. Análise de Viabilidade (Estratégico)
+Utiliza os fluxos projetados para calcular indicadores de desempenho financeiro:
+* **VPL (Valor Presente Líquido):** Demonstra a riqueza gerada pelo projeto trazida ao valor de hoje.
+* **Payback Descontado:** Identifica o tempo exato necessário para recuperar o investimento inicial, considerando o valor do dinheiro no tempo.
 
-* **FCt:** Fluxo de caixa no período (t).
-* **i:** Taxa de desconto ou TMA (Taxa Mínima de Atratividade).
-* **t:** Período de tempo.
-* **Investimento Inicial:** Capital aportado no início do projeto.
+[Image of a financial cash flow diagram showing inflows and outflows over time]
 
-### 2. Payback Descontado
-Diferente do payback simples, o descontado considera a desvalorização do dinheiro ao longo do tempo através do Valor Presente (VP):
-`VP = Fluxo de Caixa / (1 + i)^t`
+## 📊 Lógica e Fundamentação Matemática
 
-O sistema acumula esses valores até que o investimento inicial seja totalmente recuperado.
+O sistema integra as duas áreas através das seguintes fórmulas:
 
-## 🛠️ Tecnologias Utilizadas
-Como estudante de **Análise e Desenvolvimento de Sistemas (ADS)**, utilizei as seguintes competências neste projeto:
-* **Lógica de Programação:** Automação de cálculos financeiros.
-* **Excel Avançado / VBA:** Interface interativa e processamento de dados.
-* **SQL:** Estruturação para armazenamento de dados financeiros (Opcional/Implementado).
+* **Saldo Final:** `Saldo Inicial + Entradas - Saídas`
+* **Valor Presente (VP):** `VP = Fluxo de Caixa / (1 + i)^t`
+* **VPL:** `VPL = Σ VP - Investimento Inicial`
+
+*Onde **i** representa a Taxa Mínima de Atratividade (TMA) e **t** o período.*
+
+## 🛠️ Tecnologias e Competências de ADS
+Como desenvolvedor em formação, este projeto demonstra as seguintes habilidades técnicas:
+* **Arquitetura de Dados:** Organização de tabelas para garantir a integridade dos registros financeiros.
+* **Lógica de Programação:** Algoritmos complexos para automação de cálculos financeiros e projeções.
+* **Excel Avançado & VBA:** Desenvolvimento de interface e motor de processamento de dados.
+* **SQL:** Estruturação para armazenamento de históricos de movimentação (opcional).
 
 ## 📂 Como Utilizar
-1. Insira o **Investimento Inicial** e a **TMA**.
-2. Preencha as projeções de **Receitas** e **Custos**.
-3. O sistema processará automaticamente os impostos e gerará o relatório de viabilidade.
+1. **Configuração:** Informe o saldo inicial e o aporte de investimento (se houver).
+2. **Lançamentos:** Alimente o sistema com as entradas e saídas previstas ou realizadas.
+3. **Análise:** Consulte o dashboard para visualizar o saldo atual e os indicadores de VPL e Payback gerados automaticamente.
 
 ---
-Documentação gerada para fins acadêmicos e portfólio profissional.
+Documentação estruturada para portfólio, focada na união entre regras de negócio financeiras e desenvolvimento de sistemas.
