@@ -37,6 +37,6 @@ Como desenvolvedor em formação, este projeto demonstra as seguintes habilidade
 
 ### Visualização do Sistema
 
+![Interface de Mercadorias](mercadoria.png)
 ![Interface de Vendas](vendas.png)
 
-![Interface de Mercadorias](mercadoria.png)
