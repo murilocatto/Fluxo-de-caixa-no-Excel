@@ -35,10 +35,5 @@ Como desenvolvedor em formação, este projeto demonstra as seguintes habilidade
 * **Excel Avançado & VBA:** Desenvolvimento de interface e motor de processamento de dados.
 * **SQL:** Estruturação para armazenamento de históricos de movimentação (opcional).
 
-## 📂 Como Utilizar
-1. **Configuração:** Informe o saldo inicial e o aporte de investimento (se houver).
-2. **Lançamentos:** Alimente o sistema com as entradas e saídas previstas ou realizadas.
-3. **Análise:** Consulte o dashboard para visualizar o saldo atual e os indicadores de VPL e Payback gerados automaticamente.
-
----
-Documentação estruturada para portfólio, focada na união entre regras de negócio financeiras e desenvolvimento de sistemas.
+![Interface de Vendas](./vendas.png)
+![Interface de Mercadorias](./mercadoria.png)
