@@ -35,5 +35,8 @@ Como desenvolvedor em formação, este projeto demonstra as seguintes habilidade
 * **Excel Avançado & VBA:** Desenvolvimento de interface e motor de processamento de dados.
 * **SQL:** Estruturação para armazenamento de históricos de movimentação (opcional).
 
-![Interface de Vendas](./vendas.png)
-![Interface de Mercadorias](./mercadoria.png)
+### Visualização do Sistema
+
+![Interface de Vendas](vendas.png)
+
+![Interface de Mercadorias](mercadoria.png)
